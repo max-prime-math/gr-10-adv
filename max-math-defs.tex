@@ -1,0 +1,159 @@
+\setlength\parindent{0pt}
+
+\usepackage{amsmath,amssymb,amsfonts,graphicx,tasks,tikz,pgfplots}
+\usetikzlibrary{arrows,quotes}
+
+\usepackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+
+\newcommand{\graph}[8]{
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \begin{axis}[
+    axis lines=middle,
+    axis line style={very thick},
+    grid style={thin,densely dotted,black!50},
+    grid=major,
+      xtick distance=#6, ytick distance=#6,
+      xmin=#2-.2, xmax=#3+.2,
+      ymin=#4-.2, ymax=#5+.2,
+      xlabel=$x$,
+      ylabel=$y$,
+      #7]
+      \addplot[
+      domain=#2:#3,
+      samples=500,#8]
+      (x,{#1});
+    \end{axis}
+  \end{tikzpicture}
+}
+
+\newcommand{\graphtwo}[9]{
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \begin{axis}[
+    axis lines=middle,
+    axis line style={very thick},
+    grid style={thin,densely dotted,black!50},
+    grid=major,
+      xtick distance=#7, ytick distance=#7,
+      xmin=#3-.2, xmax=#4+.2,
+      ymin=#5-.2, ymax=#6+.2,
+      xlabel=$x$,
+      ylabel=$y$,
+      #8]
+      \addplot[
+      domain=#3:#4,
+      samples=500,#9]
+      (x,{#1});
+      \addplot[
+      domain=#3:#4,
+      samples=500,#9]
+      (x,{#2});
+    \end{axis}
+  \end{tikzpicture}
+}
+
+\newcommand{\curve}[7]{% function, xmin, xmax, ymin, ymax, 
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \begin{axis}[
+    axis lines=middle,
+    axis line style={very thick},
+    grid style={thin,densely dotted,black!50},
+    grid=major,
+    xticklabels={},
+	yticklabels={},
+	xtick distance=1, ytick distance=1,
+	extra x ticks={#3},
+	extra y ticks={#5},
+      xmin=#2-.2, xmax=#3+.2,
+      ymin=#4-.2, ymax=#5+.2,
+      xlabel=$x$,
+      ylabel=$y$,
+      #6]
+      \addplot[
+      domain=#2:#3,
+      samples=500,#7]
+      (x,{#1});
+    \end{axis}
+  \end{tikzpicture}
+}
+
+\newcommand{\blankgraph}[6]{
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \begin{axis}[
+    width=#5in,height=#6in,
+    axis lines=middle,
+    axis line style={very thick},
+    grid style={thin,densely dotted,black!50},
+    grid=major,
+    xticklabels={},
+	yticklabels={},
+	xtick distance=1, ytick distance=1,
+	extra x ticks={#2},
+	extra y ticks={#4},
+      xtick distance=1, ytick distance=1,
+      xticklabels={1},
+      yticklabels={1},
+      xmin=#1-.2, xmax=#2+.2,
+      ymin=#3-.2, ymax=#4+.2,
+      xlabel=$x$,
+      ylabel=$y$]
+    \end{axis}
+  \end{tikzpicture}
+}
+
+\newcommand{\blankaxes}[2]{
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \begin{axis}[
+    width=#1in,height=#2in,
+    axis lines=middle,
+    axis line style={very thick},
+    grid=major,
+    xtick distance=2, ytick distance=2,
+    xmin=-1, xmax=1,
+    ymin=-1, ymax=1,
+    xlabel=$x$,
+    ylabel=$y$]
+  \end{axis}
+\end{tikzpicture}
+}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\lr}[1]{\left(#1\right)}
+
+% \usepackage{amsthm}
+% \theoremstyle{definition}
+% \newtheorem{problem}{}
+% \counterwithin*{problem}{section}
+% \renewcommand{\theproblem}{\thesubsection.\arabic{problem}}
+%
+% \newtheorem*{solutionx}{\thesolutionnumber}
+% \ExplSyntaxOn
+% \tl_new:N \g_gargantuar_solution_tl
+%
+% \NewDocumentEnvironment{solution}{+b}
+%  {
+%   \tl_gput_right:Nx \g_gargantuar_solution_tl
+%    {
+%     \printsolution{\theproblem}{ \exp_not:n { #1 } }
+%    }
+%  }
+%  {}
+% \NewDocumentCommand{\printsolutions}{}
+%  {
+%   \tl_use:N \g_gargantuar_solution_tl
+%   \tl_gclear:N \g_gargantuar_solution_tl
+%  }
+% \NewDocumentCommand{\printsolution}{m +m}
+%  {
+%   \cs_set:Npn \thesolutionnumber { #1 }
+%   \begin{solutionx} #2 \end{solutionx}
+%  }
+% \ExplSyntaxOff
+% \makeatother
+%
+% \newcommand{\prb}[1]{\begin{problem}#1\end{problem}}
+% \newcommand{\sol}[1]{\begin{solution}#1\end{solution}}
