@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757687297.80584 "quadratic-2.tex" "quadratic-2.pdf" "quadratic-2" 1757687324.35204 0
+["pdflatex"] 1757705044.32017 "quadratic-2.tex" "quadratic-2.pdf" "quadratic-2" 1757705131.05426 0
   "../math-defs.tex" 1757619723.75839 3897 70f5f8ac6dbf173d41d4756c61af2040 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1755987285 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1755987285 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -222,9 +222,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757537082 325717 59a65e600f662ceace641c3ea8b5d4af ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757537081 2008241 a8619453c641b8f191b8a3a002e3cb0d ""
-  "quadratic-2.aux" 1757687324.24535 10740 7b0b761933d22b734836b5dc6446f2de "pdflatex"
-  "quadratic-2.out" 1757687324.24935 1590 c6a49c15928be3fa1b5efe62a13da18b "pdflatex"
-  "quadratic-2.tex" 1757687222.62934 64033 689639c14a070414326c88843dadd0a2 ""
+  "quadratic-2.aux" 1757705130.86111 10751 2818514d100b904662d5db7b979eb93d "pdflatex"
+  "quadratic-2.out" 1757705130.86511 1654 021b0ea5eb9ea862de2fe8bb413af889 "pdflatex"
+  "quadratic-2.tex" 1757704905.36911 64707 26c60c5f7a43be92a142a38769b1d008 ""
   (generated)
   "quadratic-2.aux"
   "quadratic-2.log"
