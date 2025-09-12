@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[most]{tcolorbox}
+
+% Page setup
+\geometry{margin=1in}
+\setcounter{section}{1} % ensures numbering starts at 2.x
+
+% Fancy headers
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Grade 10 Advanced Math}
+\rhead{Unit 2: Radicals}
+\cfoot{\thepage}
+
+% Note box for definitions/examples
+\newtcolorbox{notebox}[1][]{
+  colback=white!97!gray,
+  colframe=black,
+  fonttitle=\bfseries,
+  coltitle=black,
+  enhanced,
+  sharp corners,
+  boxrule=0.8pt,
+  title=#1
+}
+
+\begin{document}
+
+\section{Square Roots and Cube Roots}
+\begin{notebox}[Definition]
+A \textbf{square root} of $a$ is a number $b$ such that $b^2 = a$.  
+A \textbf{cube root} of $a$ is a number $b$ such that $b^3 = a$.
+\end{notebox}
+
+\noindent Examples:
+\[
+\sqrt{25} = \_\_\_\_\,, \qquad \sqrt[3]{-27} = \_\_\_\_ 
+\]
+
+\begin{notebox}[Practice]
+Evaluate:
+\[
+\sqrt{49}, \quad \sqrt[3]{125}, \quad \sqrt[3]{-8}
+\]
+\end{notebox}
+
+\section{Simplifying Radicals}
+\begin{notebox}[Key Idea]
+Factor the radicand into perfect squares/cubes.  
+Example: $\sqrt{50} = \_\_\_\_\_$
+\end{notebox}
+
+\begin{notebox}[Practice]
+Simplify:
+\[
+\sqrt{72}, \quad \sqrt[3]{54}, \quad \sqrt{18x^2}
+\]
+\end{notebox}
+
+\section{Exponential Notation}
+\begin{notebox}[Definition]
+Radicals can be written as fractional exponents:
+\[
+\sqrt[n]{a} = a^{1/n}
+\]
+\end{notebox}
+
+\noindent Examples:
+\[
+\sqrt{a} = a^{1/2}, \qquad \sqrt[3]{a^2} = a^{2/3}
+\]
+
+\begin{notebox}[Exponent Laws]
+\[
+a^m \cdot a^n = a^{m+n}, \quad (a^m)^n = a^{mn}
+\]
+\end{notebox}
+
+\begin{notebox}[Practice]
+Write in exponential form:
+\[
+\sqrt[4]{x^3}, \quad \sqrt{y^5}
+\]
+\end{notebox}
+
+\section{Rational vs Irrational Numbers}
+\begin{notebox}[Definitions]
+\textbf{Rational:} can be written as $\tfrac{p}{q}$ with $q \neq 0$.  
+\textbf{Irrational:} cannot be expressed as a fraction.
+\end{notebox}
+
+\begin{notebox}[Example]
+Proof that $\sqrt{2}$ is irrational:  
+(Students complete outline of contradiction proof.)
+\end{notebox}
+
+\begin{notebox}[Practice]
+Classify:
+\[
+\sqrt{9}, \quad \sqrt{7}, \quad 0.333\ldots, \quad \pi
+\]
+\end{notebox}
+
+\section{Imaginary Numbers}
+\begin{notebox}[Definition]
+Define $i = \sqrt{-1}$.  
+Then $i^2 = -1$.
+\end{notebox}
+
+\noindent Examples:
+\[
+\sqrt{-9} = \_\_\_\_\,, \qquad i^3 = \_\_\_\_, \qquad i^4 = \_\_\_\_
+\]
+
+\begin{notebox}[Practice]
+Simplify:
+\[
+\sqrt{-25}, \quad i^3, \quad i^4
+\]
+\end{notebox}
+
+\section{Number Systems}
+\begin{notebox}[Hierarchy]
+\begin{multicols}{2}
+\begin{itemize}[topsep=0pt]
+  \item $\mathbb{N}$: natural numbers
+  \item $\mathbb{Z}$: integers
+  \item $\mathbb{Q}$: rationals
+  \item Irrationals
+  \item $\mathbb{R}$: reals
+  \item $\mathbb{C}$: complex numbers
+\end{itemize}
+\end{multicols}
+\end{notebox}
+
+\vspace{1cm}
+\noindent\textbf{Diagram:} (Students draw a Venn diagram of number systems.)
+
+\end{document}

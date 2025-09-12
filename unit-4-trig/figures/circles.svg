@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="160mm"
+   height="80mm"
+   viewBox="0 0 160 80"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="circles.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2"
+     inkscape:cx="75.5"
+     inkscape:cy="180.75"
+     inkscape:window-width="1882"
+     inkscape:window-height="1011"
+     inkscape:window-x="1414"
+     inkscape:window-y="143"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.431814;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       id="path4967"
+       cx="91.119408"
+       cy="25.639017"
+       rx="0.1457836"
+       ry="0.14548051" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.35277778;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       id="circle4969"
+       cx="91.119408"
+       cy="25.639017"
+       rx="18.511166"
+       ry="18.472679" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.265451;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       id="circle6060"
+       cx="73.871307"
+       cy="48.849476"
+       rx="0.21881607"
+       ry="0.21836112" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.35277778;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       id="circle6062"
+       cx="73.871307"
+       cy="48.849476"
+       rx="10.242764"
+       ry="10.221468" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.403649;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       id="circle6064"
+       cx="50.612492"
+       cy="55.890854"
+       rx="0.19221359"
+       ry="0.19181399" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.35277778;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       id="circle6066"
+       cx="50.612492"
+       cy="55.890854"
+       rx="13.860189"
+       ry="13.831373" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.352777;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       x="91.81041"
+       y="28.574999"
+       id="text6827"><tspan
+         sodipodi:role="line"
+         id="tspan6825"
+         style="stroke-width:0.352778"
+         x="91.81041"
+         y="28.574999">$C$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.352777;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       x="74.480209"
+       y="52.255203"
+       id="text6831"><tspan
+         sodipodi:role="line"
+         id="tspan6829"
+         style="stroke-width:0.352778"
+         x="74.480209"
+         y="52.255203">$B$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.352777;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:7.2"
+       x="48.021873"
+       y="61.383327"
+       id="text6835"><tspan
+         sodipodi:role="line"
+         id="tspan6833"
+         style="stroke-width:0.352778"
+         x="48.021873"
+         y="61.383327">$A$</tspan></text>
+  </g>
+</svg>

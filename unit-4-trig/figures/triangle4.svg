@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="160mm"
+   height="80mm"
+   viewBox="0 0 160 80"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="triangle4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4984147"
+     inkscape:cx="314.33221"
+     inkscape:cy="181.52518"
+     inkscape:window-width="958"
+     inkscape:window-height="1128"
+     inkscape:window-x="-7"
+     inkscape:window-y="235"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:lockguides="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.352777;stroke-dashoffset:1.46759"
+       d="M 38.670036,24.897146 73.631985,68.158145 101.53091,36.021404 Z"
+       id="path8871" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:none;stroke:#000000;stroke-width:0.352777;stroke-dashoffset:1.46759"
+       x="67.804993"
+       y="28.605232"
+       id="text8875"><tspan
+         sodipodi:role="line"
+         id="tspan8873"
+         style="stroke-width:0.352778"
+         x="67.804993"
+         y="28.605232">21cm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:none;stroke:#000000;stroke-width:0.352777;stroke-dashoffset:1.46759"
+       x="70.277054"
+       y="73.278839"
+       id="text8879"><tspan
+         sodipodi:role="line"
+         id="tspan8877"
+         style="stroke-width:0.352778"
+         x="70.277054"
+         y="73.278839">$B$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:none;stroke:#000000;stroke-width:0.352777;stroke-dashoffset:1.46759"
+       x="103.29666"
+       y="36.021404"
+       id="text8883"><tspan
+         sodipodi:role="line"
+         id="tspan8881"
+         style="stroke-width:0.352778"
+         x="103.29666"
+         y="36.021404">$C$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:none;stroke:#000000;stroke-width:0.352777;stroke-dashoffset:1.46759"
+       x="31.430443"
+       y="25.956598"
+       id="text8887"><tspan
+         sodipodi:role="line"
+         id="tspan8885"
+         style="stroke-width:0.352778"
+         x="31.430443"
+         y="25.956598">$A$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:none;stroke:#000000;stroke-width:0.352777;stroke-dashoffset:1.46759"
+       x="45.203327"
+       y="32.66647"
+       id="text8891"><tspan
+         sodipodi:role="line"
+         id="tspan8889"
+         style="stroke-width:0.352778"
+         x="45.203327"
+         y="32.66647">$48^\circ$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:none;stroke:#000000;stroke-width:0.352777;stroke-dashoffset:1.46759"
+       x="90.230087"
+       y="39.906067"
+       id="text8895"><tspan
+         sodipodi:role="line"
+         id="tspan8893"
+         style="stroke-width:0.352778"
+         x="90.230087"
+         y="39.906067">$61^\circ$</tspan></text>
+  </g>
+</svg>
