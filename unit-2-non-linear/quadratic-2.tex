@@ -933,6 +933,7 @@ Some quadratics have a specific pattern.  Consider the following two products:
 \]
 The first is called a difference of squares, and the second is called a perfect square.  Why do you think they're called this?
 \vfill 
+\clearpage
 Factor all of the below quadratics.
 \begin{tasks}(2)
 	\task $x^2+11x + 30$\\[2em]
@@ -944,15 +945,22 @@ Factor all of the below quadratics.
 	\task $10x^2 -24x -18 $\\[2em]
 	\task $12x^2-4x-8$\\[2em]
 \end{tasks}
+\section*{Don't forget to remove common factors.}
+Some quadratics have common factors in all of their terms.  It is very useful to factor that out first.  Try it on the following quadratics.
+\begin{tasks}(3)
+\task $5 x+10$
+\task $3 x^2-6$
+\task $12 x^4-8 x^3+4 x^2$
+\end{tasks}
+\vspace{1.5in}
 \section*{What does factoring have to do with graphing?}
-There is a very important property in algebra called the zero factor theorem.  It says that for any two numbers $a$ and $b$, if $a\times b = 0$ then either $a=0$ or\footnote{This is not an exclusive ``or'': so another possibility is that $a=b=0$.} $b=0$.
+There is a very important property in algebra called the zero factor theorem.  It says that for any two numbers $a$ and $b$, if $a\times b = 0$ then either $a=0$ or $b=0$; note that this is not an exclusive ``or,'' so another possibility is that $a=b=0$. 
 
 This can help us find the $x$-intercepts of a quadratic.  To find an $x$-intercept, we set $y=0$ and solve for $x$.
 \\[1em]
 Find the $x$-intercepts of the following quadratic:
 \[y=x^2-5x-24\]
 \vfill How do you find the $y$-intercept?
-\\[1in]
 \clearpage
 \section*{What about quadratics that don't have roots?}
 The quadratic function $y=x^2+1$ does not pass through the $x$-axis and does not have any roots.  Can you factor this quadratic?  Try it!
@@ -961,8 +969,62 @@ What about $y=x^2 - 2$?  This function definitely has two roots since it opens u
 \\[4em]
 Some quadratics have no roots and they're impossible to factor for that reason.  Some quadratics do have roots but are nearly impossible to factor.  That's because their roots are irrational, and include a square root.  All of the quadratics in the exercises of this chapter will have rational roots.  In the next chapter we'll figure out how to find the roots of any quadratic - even those that have irrational roots.
 
-
-
+\prb {Multiply.
+    \begin{tasks}
+\task $(2 x+1)(3 x+2)$
+		\\[5em]
+\task $(3 y-4)(2 y+3)$
+		\\[5em]
+\task $\left(3 x^2+4\right)(x+1)$
+		\\[5em]
+\task $\left(4 y^2+3\right)(3 y-1)$
+		\\[5em]
+\task $(-3 y-4)(2 y-3)$
+		\\[5em]
+\task $(5 x-y)(5 x-y)$
+		\\[5em]
+\task $(2 x-1)\left(2 x^2+3 x-1\right)$
+		\\[5em]
+\task $(5 x-6)\left(2 x^2+7 x-3\right)$
+		\\[5em]
+\task $(3 y-2 x)\left(4 y^2-3 x y+x^2\right)$
+		\\[5em]
+\task $\left(x^2+2 y\right)\left(2 x^2+3 x y-y^2\right)$
+		\\[5em]
+\task $(4-x)\left(4-3 x^3+x^2-5 x\right)$
+		\\[5em]
+\task $(2-y)\left(3-2 y^2-y^3+4 y\right)$
+		\\[5em]
+\task $(x-y)\left(x^2+x y+y^2\right)$
+		\\[5em]
+\task $\left(x^2-y^2\right)\left(x^4+x^2 y^2+y^4\right)$
+		\\[5em]
+\task $\left(3 x^2-x+5\right)\left(2 x^2+4 x-1\right)$
+		\\[5em]
+\task $\left(2 y^2+y-7\right)\left(5 y^2-3 y-1\right)$
+		\\[5em]
+\end{tasks}
+}
+\sol{
+    \begin{tasks}(2)
+\task $6 x^2+7 x+2$
+\task $6 y^2+y-12$
+\task $3 x^3+3 x^2+4 x+4$
+\task $12 y^3-4 y^2+9 y-3$
+\task $-6 y^2+y+12$
+\task $25 x^2-10 x y+y^2$
+\task $4 x^3+4 x^2-5 x+1$
+\task $10 x^3+23 x^2-57 x+18$
+\task $12 y^3-17 x y^2+9 x^2 y-2 x^3$
+\task $2 x^4+3 x^3 y-x^2 y^2+4 x^2 y+6 x y^2-2 y^3$
+\task $3 x^4-13 x^3+9 x^2-24 x+16$
+\task $y^4-8 y^2+5 y+6$
+\task $x^3-y^3$
+\task $x^6-y^6$
+\task $6 x^4+10 x^3+3 x^2+21 x-5$
+\task $10 y^4-y^3-40 y^2+20 y+7$
+\end{tasks}
+}
 \prb{Factor completely.
 	\begin{tasks}(2)
 		\task $x^2+7 x+10$
@@ -1058,13 +1120,8 @@ Some quadratics have no roots and they're impossible to factor for that reason. 
 \prb{A square has an area of $\left(9 x^2+30 x y+25 y^2\right)$ square centimetres. What is an expression for the perimeter of the square?\\[5em]}
 \sol{$4(3x + 5y)$ centimetres.}
 
-
-
-
-
-
 \chapter{6. The Quadratic Formula}
-Some quadratics are hard to factor.  Some quadratics can't be factored at all.  How can we reconcile this?
+Some quadratics are hard to factor.  Some quadratics can't be factored at all.  This raises an important question: when you're having a hard time factoring a quadratic, how do you know if it's just hard, or that it's impossible? 
 \\[1em]
 The following two functions cannot be factored using the methods we know about.  Try completing the square and then graphing them.
 \begin{tasks}(2)
@@ -1080,7 +1137,7 @@ In function a) set $y=0$ and isolate $x$ by moving the constant to the other sid
 Before you do that, remember that even though $x^2=1$ means that $x=1$ or $x=-1$, it is not true that $\sqrt 1 = \pm 1$.  When we take the square root of a number, we get the \emph{principle} square root, which is always positive.  When we solve an equation that has a square in it, since we need to account for the fact that the base of the power is negative, we include the $\pm$ in our solution.
 \clearpage
 Do the same process for function b).
-\vspace{3in}
+\\[3in]
 To save time, mathematicians devised a formula that allows us to skip the process of completing the square, and to get the roots of a quadratic function directly.  This method will also tell us immediately if a quadratic function has no roots.
 \\[1em]
 The quadratic formula can be derived from a gerneral quadratic $y=ax^2+bx+c$.

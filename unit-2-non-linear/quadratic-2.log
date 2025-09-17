@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.10)  12 SEP 2025 14:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.10)  16 SEP 2025 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1021,41 +1021,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 923--926
 
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 954--956
 
- []
+[34
 
-
-
-[34]
+]
 
 [35
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1026--1026
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1029
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
-
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [36]
 
 [37]
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1088
 
-[38
+ []
 
-]
-Chapter 6.
+
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1091--1091
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1120
+
+ []
+
 
 
 [39]
@@ -1063,80 +1059,88 @@ Chapter 6.
 [40
 
 ]
+Chapter 6.
+
+
+[41]
+
+[42
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[41
+[43
 
 ]
 
-[42]
+[44]
 
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 1166--1166
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 1223--1223
 
  []
 
 
 
-[44
+[46
 
 ]
 
-[45]
+[47]
 
-[46
+[48
 
 ]
 Chapter 7.
 
 
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 1275--1279
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1294--1296
+Underfull \hbox (badness 10000) in paragraph at lines 1351--1353
 
  []
 
 
 
-[48
+[50
 
 ]
 
-[49]
-
-[50]
-
 [51]
 
-[52
+[52]
+
+[53]
+
+[54
 
 ]
 Chapter 8.
 
 
-[53]
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[54
+[56
 
 ]
 
-[55]
+[57]
 
-[56
+[58
 
 ]
 Chapter 9.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1497--1499
+Underfull \hbox (badness 10000) in paragraph at lines 1554--1556
 
  []
 
@@ -1145,25 +1149,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[57]
+[59]
 
-[58]
+[60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[59
+[61
 
 ]
 Underfull \vbox (badness 1642) has occurred while \output is active []
 
 
 
-[60]
+[62]
 
-[61]
+[63]
 
-[62
+[64
 
 ]
 Chapter 10.
@@ -1172,55 +1176,57 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[63]
-
-[64]
-
 [65]
 
-[66
+[66]
+
+[67]
+
+[68
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1714--1714
+Underfull \hbox (badness 10000) in paragraph at lines 1771--1771
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1720--1720
+Underfull \hbox (badness 10000) in paragraph at lines 1777--1777
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[67
-
-]
-
-[68]
-Chapter 11.
 
 
 [69
 
 ]
+
+[70]
+Chapter 11.
+
+
+[71
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[70
+[72
 
 ]
 
-[71]
-
-[72]
-
 [73]
 
-[74] (./quadratic-2.aux)
+[74]
+
+[75]
+
+[76]
+
+[77] (./quadratic-2.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1229,18 +1235,18 @@ Package rerunfilecheck Info: File `quadratic-2.out' has not changed.
 (rerunfilecheck)             Checksum: 021B0EA5EB9EA862DE2FE8BB413AF889;1654.
  ) 
 Here is how much of TeX's memory you used:
- 36832 strings out of 475171
- 851122 string characters out of 5767095
- 1894151 words of memory out of 5000000
- 58775 multiletter control sequences out of 15000+600000
- 567989 words of font info for 71 fonts, out of 8000000 for 9000
+ 36860 strings out of 475171
+ 851367 string characters out of 5767095
+ 1906151 words of memory out of 5000000
+ 58767 multiletter control sequences out of 15000+600000
+ 566290 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,14n,94p,730b,2620s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on quadratic-2.pdf (75 pages, 430633 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on quadratic-2.pdf (78 pages, 403801 bytes).
 PDF statistics:
- 996 PDF objects out of 1000 (max. 8388607)
- 880 compressed objects within 9 object streams
- 520 named destinations out of 1000 (max. 500000)
+ 1035 PDF objects out of 1200 (max. 8388607)
+ 921 compressed objects within 10 object streams
+ 558 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
