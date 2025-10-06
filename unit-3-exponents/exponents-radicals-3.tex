@@ -1,0 +1,106 @@
+\documentclass[12pt,fleqn]{book}
+
+\usepackage{titlesec}
+\usepackage{caption}
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{}{0pt}{\Huge}
+\titlespacing{\chapter}
+  {0pt}{10pt}{40pt}
+
+\usepackage{amsmath,amssymb,amsfonts,graphicx,tasks,tikz,pgfplots}
+\usetikzlibrary{arrows}
+\pgfplotsset{compat=1.17}
+
+\usepackage{tasks}
+\settasks{
+  label-width = 18pt
+}
+ 
+\makeatletter
+ \def\@textbottom{\vskip \z@ \@plus 1pt}
+ \let\@texttop\relax
+\makeatother
+
+\usepackage[letterpaper,margin=0.5in,footskip=.5cm]{geometry}
+
+\input{../math-defs.tex}
+
+\pagestyle{plain}
+\usepackage[lastexercise,answerdelayed]{exercise}
+\usepackage{totcount}
+\regtotcounter{Exercise} % register the counter for getting the total
+\usepackage{chngcntr}
+\counterwithin{Exercise}{chapter}
+\counterwithin{Answer}{chapter}
+\usepackage{xassoccnt}
+\NewTotalDocumentCounter{totalex}
+\usepackage{titleref}
+\usepackage{etoolbox}
+
+%EXERCISE START
+
+\renewcommand{\ExerciseHeader}{ \stepcounter{totalex}\ifnumcomp{\value{Exercise}}{=}{1}{\ifnumcomp{\thechapter}{=}{1}{}{\vspace{10pt}}\noindent\Large\textbf{Exercises}\par\vspace{10pt}}{}\noindent\normalsize\bfseries\ExerciseHeaderNB\ExerciseHeaderDifficulty.}
+\renewcommand{\AnswerHeader}{\ifnumcomp{\value{Exercise}}{=}{1}{\ifnumcomp{\thechapter}{=}{1}{}{\vspace{10pt}}\noindent\Large\textbf{Section\ \thechapter\ Solutions}\par\vspace{10pt}}{}\noindent\normalsize\bfseries\ExerciseHeaderNB.\ }
+
+\usepackage{hyperref}
+
+\newcommand{\prb}[1]{\begin{Exercise}#1\end{Exercise}}
+\newcommand{\sol}[1]{\begin{Answer}#1\end{Answer}}
+
+%EXERCISE END
+
+
+
+\begin{document}
+\noindent
+\thispagestyle{empty}
+Grade 10 Advanced Math \hfill Name: \hspace{2in}
+\medskip\hrule
+\noindent
+
+\vfill
+
+\begin{center}
+	{\bf \huge Chapter 3: Radicals and Exponents}
+\end{center}
+
+\vfill
+\vfill
+
+\clearpage
+
+\setcounter{page}{1}
+
+{\bf \huge Introduction }
+\\[1in]
+In the first chapter, we dealt with functions that could be sketched as a straight line.  We observed how they intersected with each other, and how we can use algebra to describe those intersections.
+\\[1em]
+In the second chapter, we learned about polynomial functions, namely quadratics, and how they can be graphed.  We spent a great deal of time finding roots of a quadratic, and even learned about imaginary numbers.
+\\[1em]
+In this chapter, we will learn about the inverse of a quadratic -- a radical.  We will learn how to play with these kinds of numbers, what \emph{kinds} of numbers they can be, and how to express them in various ways.
+\\[1em]
+Try this warm up to see if you can get all of these facts right.
+\begin{tasks}(2)
+    \task $3^2=$
+    \task $(-3)^2=$
+    \\[1em]
+    \task If $x^2=9,$ then $x=$
+    \task $\sqrt 9 =$
+    \\[1em]
+    \task $\sqrt{x^2}=$
+    \task $(\sqrt x)^2=$
+\end{tasks}
+\clearpage
+\chapter{1. Relations, Functions, One-to-one}
+\chapter{2. Inverse Functions}
+\chapter{3. The Radical Function}
+\chapter{4. Number Systems}
+\chapter{5. Manipulating Radicals}
+\chapter{6. Factoring}
+\chapter{7. Exponential Notation}
+\prb{a problem}
+\sol{a solution}
+\chapter{Selected Solutions.}
+\shipoutAnswer
+\end{document}
