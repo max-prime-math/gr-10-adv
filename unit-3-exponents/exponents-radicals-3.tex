@@ -152,6 +152,13 @@ Use Desmos to help you graph these functions.  Try to see if you can visualize \
 \end{defn}
 So all of the above equations are relations because they represent a relationship between $x$ and $y$.  When Desmos graphs these, they are finding all possible solutions to the equation, and plotting each point, one by one.
 \\[1em]
+We can also describe a relation by means of a mapping diagram.
+\\[1em]
+\mappingdiagram{1,2,3}{a,b,c}{1/1,2/2,3/3}
+\\[1em]
+The above mapping diagram indicates that we have two sets, $\{a, b, c\}$, and $\{1, 2, 3\}$.
+The first set is referred to as our domain, and the second set is called the range.
+\\[1em]
 There is a quick way of determining when a graph represents a function and when it doesn't.  
 \begin{defn}{Vertical Line Test}{}
 Given the graph of a relation, if there exists a vertical line that overlaps the curve of the graph more than once, then the relation is not a function.  If no such vertical line exists, then the relation is a function.
@@ -170,6 +177,17 @@ Use the Vertical Line Test to determine which of these graphs represents a relat
 
 As you may be able to sense, a function is a special type of relation.  But is there something even more special?  Are there types of functions are even more exclusive?  It turns out: yes.  These functions are called one-to-one functions.
 
+Recall that the feature that a relation requires is that for every one input there is exactly one output. For a function to be one to one, we require the following.
+\begin{defn}{One-to-one Function}{}
+    A function is said to be one-to-one if for every single \emph{output}, there is exactly one \emph{input}.  Symbolically, we can say:
+    \[ 
+        f(a)=f(b) \text{ implies } a=b.
+    \]
+    In other words, the only way that two outputs can be the same ($f(a)$ and $f(b)$), is if they are not two outputs at all -- that they are indeed from the same input ($a$ and $b$).
+    \end{defn}
+
+    It is useful to remember that one-to-one functions are \emph{all} functions, and all functions are relations.  But not all relations are function, and not all functions are one-to-one.
+    \\[1em]
 \begin{tikzpicture}[font=\large, line width=1pt]
 
 % Outer rectangle: Relations
@@ -187,6 +205,21 @@ As you may be able to sense, a function is a special type of relation.  But is t
 \node at (0,1) {One-to-one Functions};
 
 \end{tikzpicture}
+
+\begin{defn}{Horizontal Line Test}{}
+Given the graph of a function, if there exists a horizontal line that overlaps the curve of the graph more than once, then the function is not one-to-one.  If no such horizontal line exists, then the function is one-to-one.
+\end{defn}
+Explain why the horizontal line test works.
+\\[2in]
+Use the horizontal line test to determine which of the following functions are one-to-one.
+\begin{tasks}(2)
+\task \graph{0.2*(x + 2)*(x - 1)*(x - 3)}{-4}{6}{-6}{6}{1}{}{}
+\task \graph{(x - 1)^2 - 2}{-4}{6}{-4}{6}{1}{}{}
+\task \graph{abs(x)}{-5}{5}{-1}{5}{1}{}{}
+\task \graph{-0.5*x + 2}{-6}{6}{-4}{6}{1}{}{}
+\task \graph{-0.1*x^3 + 2}{-6}{6}{-4}{6}{1}{}{}
+\task \graph{5*sin(.8*deg(x))}{-6}{6}{-6}{6}{1}{}{}
+\end{tasks}
 
 \chapter{2. Inverse Functions}
 \chapter{3. The Radical Function}

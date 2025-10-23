@@ -2,13 +2,50 @@
 
 \usepackage{amsmath,amssymb,amsfonts,graphicx,tasks,tikz,pgfplots}
 \usepackage{amsthm,thmtools}
-\usetikzlibrary{arrows,quotes}
+\usetikzlibrary{arrows,quotes,arrows.meta,fit,shapes.geometric}
 
 \usepackage{array}
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
 \newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
 \newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
 \newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+% Mapping diagram: one big ellipse per side, no titles
+% #1 = domain elements (comma-separated)
+% #2 = codomain elements (comma-separated)
+% #3 = arrows as pairs i/j (i=index in domain, j=index in codomain)
+% Optional keys: [xsep=5, vsep=1.2]
+\newcommand{\mappingdiagram}[4][]{%
+  % defaults + user overrides
+  \def\xsep{5}\def\vsep{1.2}
+  \tikzset{md/.cd, xsep/.store in=\xsep, vsep/.store in=\vsep}
+  \tikzset{md/.cd, #1}
+
+  \begin{tikzpicture}[>=Stealth, every node/.style={font=\large}]
+    % --- Domain nodes ---
+    \def\Dnodes{}%
+    \foreach \d [count=\i] in {#2} {%
+      \node (D\i) at (0,-\i*\vsep) {$\d$};
+      \xdef\Dnodes{\Dnodes (D\i)}%
+    }
+
+    % --- Codomain nodes ---
+    \def\Cnodes{}%
+    \foreach \c [count=\j] in {#3} {%
+      \node (C\j) at (\xsep,-\j*\vsep) {$\c$};
+      \xdef\Cnodes{\Cnodes (C\j)}%
+    }
+
+    % --- Ellipses around sets ---
+    \node[draw, ellipse, fit=\Dnodes, inner sep=10pt] {};
+    \node[draw, ellipse, fit=\Cnodes, inner sep=10pt] {};
+
+    % --- Arrows (i/j pairs) ---
+    \foreach \a/\b in {#4} {%
+      \draw[->, thick] (D\a.east) -- (C\b.west);
+    }
+  \end{tikzpicture}%
+}
+
 
 % Two-branch graph with equal scale and only max tick labels
 % #1 = y1(x), #2 = y2(x), #3 = xmin, #4 = xmax, #5 = ymin, #6 = ymax,
