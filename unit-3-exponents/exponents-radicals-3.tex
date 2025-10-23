@@ -8,6 +8,13 @@
 \titlespacing{\chapter}
   {0pt}{10pt}{40pt}
 
+	\newenvironment{amatrix}[1]{%
+	  \left[\begin{array}{@{}*{#1}{r}|r@{}}
+	}{%
+	  \end{array}\right]
+	}
+
+
 \usepackage{amsmath,amssymb,amsfonts,graphicx,tasks,tikz,pgfplots}
 \usetikzlibrary{arrows}
 \pgfplotsset{compat=1.17}
@@ -47,10 +54,6 @@
 
 \newcommand{\prb}[1]{\begin{Exercise}#1\end{Exercise}}
 \newcommand{\sol}[1]{\begin{Answer}#1\end{Answer}}
-
-%EXERCISE END
-
-
 
 \begin{document}
 \noindent
@@ -93,12 +96,105 @@ Try this warm up to see if you can get all of these facts right.
 \end{tasks}
 \clearpage
 \chapter{1. Relations, Functions, One-to-one}
+We have seen several types of function in this class so far.  The first type, and most straightforward was the linear function.  Then we realized that if we multiplied two linear functions together, we got a quadratic function.  There are also higher-degree polynomial functoins that we briefly explored in the last chapter.
+\\[1em]
+It turns out that functions are the life-blood of a lot of mathematics.  Most of mathematics can be described using the language of functions.
+\\[1em]
+But not all equations can be described as a function.  It is probably a  good idea to remind ourselves what exactly a function is!
+\begin{defn}{Function}{}
+A function is a rule that takes as input one value and outputs another value, related to the input.  If $x$ is the input of function $f$, and $y$ is the output of the function, then we write
+\[
+    y=f(x)
+\]
+\end{defn}
+It is critical to understand that for every single input, there is a single output.  A function fails to be a function if you were to input a single value and get back \emph{two} or more values.
+\\[1em]
+Consider the following functions.
+\begin{tasks}(4)
+    \task
+    $f(x)=x^2$
+    \task
+    $f(x)=(x-2)(x+1)^2$
+    \task
+    $y=x-4$
+    \task
+    $g(x)=\sqrt x$
+\end{tasks}
+Use Desmos to help you graph the above functions below.
+\\[1em]
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\\[1em]
+Some equations in math, however, are not best described as a function.  Sometimes if I give you one input, you may want two outputs.
+\\[1em]
+The following are not functions:
+\begin{tasks}(2)
+    \task
+    $y^2=x$
+    \task
+    $x^2+y^2=1$
+    \task
+    $x^3+y^2=xy$
+    \task
+    $y=\pm x$
+\end{tasks}
+Use Desmos to help you graph these functions.  Try to see if you can visualize \emph{exactly} what makes these equations non-functions.
+\\[1em]
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\blankgraph{-4}{4}{-4}{4}{2.3}{2.3}
+\\[1em]
+\begin{defn}{Relation}{}
+    An equation that has two or more variables is called a relation.  Most relations are between two variables, $x$ and $y$.  If the relation $R$ has a solution $x=a$ and $y=b$, then the the relation can be graphed by plotting $(a,b)$, and all other solutions to the equation.  Furthermore, we can write $a R b$ and say $a$ is related to $b$.
+\end{defn}
+So all of the above equations are relations because they represent a relationship between $x$ and $y$.  When Desmos graphs these, they are finding all possible solutions to the equation, and plotting each point, one by one.
+\\[1em]
+There is a quick way of determining when a graph represents a function and when it doesn't.  
+\begin{defn}{Vertical Line Test}{}
+Given the graph of a relation, if there exists a vertical line that overlaps the curve of the graph more than once, then the relation is not a function.  If no such vertical line exists, then the relation is a function.
+\end{defn}
+Use the Vertical Line Test to determine which of these graphs represents a relation that is a function, and which is a relation that is \emph{not} a function.
+\begin{tasks}(2)
+\task \graph{0.2*(x + 2)*(x - 1)*(x - 3)}{-4}{6}{-6}{6}{1}{}{}
+\task \graphpair{1 + 3*sqrt(1 - (x/2)^2)}{1 - 3*sqrt(1 - (x/2)^2)}{-2}{2}{-2.5}{4.5}{0.5}{}{}
+\task \graphpair{2}{-(2 - (x - 1)^2)}{-3}{5}{-4}{4}{1}{}{}
+\task \graph{(x - 1)^2 - 2}{-4}{6}{-4}{6}{1}{}{}
+\task \graph{abs(x)}{-5}{5}{-1}{5}{1}{}{}
+\task \graphpair{sqrt(9-x^2)}{-sqrt(9-x^2)}{-3}{3}{-3}{3}{1}{}{}
+\task \graph{-0.5*x + 2}{-6}{6}{-4}{6}{1}{}{}
+\task \graphpair{1 + sqrt(x + 2)}{1 - sqrt(x + 2)}{-2}{7}{-3}{5}{1}{}{}
+\end{tasks}
+
+As you may be able to sense, a function is a special type of relation.  But is there something even more special?  Are there types of functions are even more exclusive?  It turns out: yes.  These functions are called one-to-one functions.
+
+\begin{tikzpicture}[font=\large, line width=1pt]
+
+% Outer rectangle: Relations
+\node[draw, rounded corners=10pt, minimum width=7cm, minimum height=7cm, anchor=center] (relations) at (0,0) {};
+
+% Middle rectangle: Functions
+\node[draw, rounded corners=10pt, minimum width=6cm, minimum height=5cm, anchor=center] (functions) at (0,0) {};
+
+% Inner rectangle: One-to-one Functions
+\node[draw, rounded corners=10pt, minimum width=5cm, minimum height=3cm, anchor=center] (one2one) at (0,0) {};
+
+% Labels (placed near the top of each rectangle)
+\node at (0,3) {Relations};
+\node at (0,2) {Functions};
+\node at (0,1) {One-to-one Functions};
+
+\end{tikzpicture}
+
 \chapter{2. Inverse Functions}
 \chapter{3. The Radical Function}
 \chapter{4. Number Systems}
 \chapter{5. Manipulating Radicals}
 \chapter{6. Factoring}
 \chapter{7. Exponential Notation}
+\chapter{8. Logarithms}
 \prb{a problem}
 \sol{a solution}
 \chapter{Selected Solutions.}

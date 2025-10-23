@@ -1,6 +1,7 @@
 \setlength\parindent{0pt}
 
 \usepackage{amsmath,amssymb,amsfonts,graphicx,tasks,tikz,pgfplots}
+\usepackage{amsthm,thmtools}
 \usetikzlibrary{arrows,quotes}
 
 \usepackage{array}
@@ -8,6 +9,37 @@
 \newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
 \newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
 \newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+
+% Two-branch graph with equal scale and only max tick labels
+% #1 = y1(x), #2 = y2(x), #3 = xmin, #4 = xmax, #5 = ymin, #6 = ymax,
+% #7 = tick distance (ignored for equal scale), #8 = extra axis opts, #9 = plot opts
+\newcommand{\graphpair}[9]{%
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \begin{axis}[
+    axis lines=middle,
+    axis line style={very thick},
+    grid style={thin,densely dotted,black!50},
+    grid=major,
+    xmin=#3-.2, xmax=#4+.2,
+    ymin=#5-.2, ymax=#6+.2,
+    xlabel=$x$, ylabel=$y$,
+    axis equal image,
+    % Only show largest tick values on each axis
+    xticklabels={},
+	yticklabels={},
+	xtick distance=1, ytick distance=1,
+	extra x ticks={#4},
+	extra y ticks={#6},
+    enlargelimits=false,
+    % Allow optional extra axis settings
+    #8
+  ]
+    \addplot[domain=#3:#4, samples=500, #9] (x,{#1});
+    \addplot[domain=#3:#4, samples=500, #9] (x,{#2});
+  \end{axis}
+\end{tikzpicture}%
+}
+
 
 \newcommand{\graph}[8]{
 \begin{tikzpicture}[baseline=(current bounding box.north)]
@@ -21,6 +53,11 @@
       ymin=#4-.2, ymax=#5+.2,
       xlabel=$x$,
       ylabel=$y$,
+    xticklabels={},
+	yticklabels={},
+	xtick distance=1, ytick distance=1,
+	extra x ticks={#3},
+	extra y ticks={#5},
       #7]
       \addplot[
       domain=#2:#3,
@@ -38,6 +75,7 @@
     grid style={thin,densely dotted,black!50},
     grid=major,
       xtick distance=#7, ytick distance=#7,
+\usepackage{amsmath,amssymb,amsfonts,amsthm,thmtools}
       xmin=#3-.2, xmax=#4+.2,
       ymin=#5-.2, ymax=#6+.2,
       xlabel=$x$,
@@ -157,3 +195,42 @@
 %
 % \newcommand{\prb}[1]{\begin{problem}#1\end{problem}}
 % \newcommand{\sol}[1]{\begin{solution}#1\end{solution}}
+% =============================
+% TCOLORBOX CONFIGURATION
+% =============================
+
+\usepackage{tcolorbox}
+
+\definecolor{black}{rgb}{0,0,0}
+\definecolor{dark-gray}{rgb}{.15,.15,.15}
+\definecolor{light-gray}{rgb}{.85,.85,.85}
+\definecolor{white}{rgb}{1,1,1}
+
+\makeatletter
+\newcommand*\ifcounter[1]{%
+	\ifcsname c@#1\endcsname
+		\expandafter\@firstoftwo
+	\else
+		\expandafter\@secondoftwo
+	\fi
+}
+\makeatother
+
+\tcbuselibrary{theorems}
+
+\ifcounter{unit}{
+	\newtcbtheorem{defn}{Definition \theunit.\hspace{-.3em}}{
+		colback=light-gray,colframe=dark-gray,coltitle=white,coltext=black,fonttitle=\bfseries,before skip=20pt plus 2pt,after skip=20pt plus 2pt}{th}
+}{
+	\newtcbtheorem{defn}{Definition}{
+		colback=light-gray,colframe=dark-gray,coltitle=white,coltext=black,fonttitle=\bfseries,before skip=20pt plus 2pt,after skip=20pt plus 2pt}{th}
+}
+
+\ifcounter{unit}{
+	\newtcbtheorem{thm}{Theorem \theunit.\hspace{-.3em}}{
+		colback=light-gray,colframe=dark-gray,coltitle=white,coltext=black,fonttitle=\bfseries,before skip=20pt plus 2pt,after skip=20pt plus 2pt}{th}
+}{
+	\newtcbtheorem{thm}{Theorem}{
+		colback=light-gray,colframe=dark-gray,coltitle=white,coltext=black,fonttitle=\bfseries,before skip=20pt plus 2pt,after skip=20pt plus 2pt}{th}
+}
+
