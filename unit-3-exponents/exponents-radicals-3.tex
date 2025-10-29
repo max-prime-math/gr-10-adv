@@ -158,6 +158,9 @@ We can also describe a relation by means of a mapping diagram.
 \\[1em]
 The above mapping diagram indicates that we have two sets, $\{a, b, c\}$, and $\{1, 2, 3\}$.
 The first set is referred to as our domain, and the second set is called the range.
+\begin{defn}{Domain and Range}{}
+    The domain of a relation is the collection of objects that go \emph{into} the relation, and the range is the collection of objects that come \emph{out of} the relation.
+\end{defn}
 \\[1em]
 The mapping diagram indicates that $a$ is related to $1$, (or $a$ is 'mapped' to $1$), $b$ is related to $2$, and $c$ is related to $3$.  We could also write $aR1$, $bR2$, and $cR3$.  We can also say that the following ordered pairs describe the relation: $(a,1), (b,2),$ and $(c,3)$.
 \\[1em]
@@ -220,7 +223,7 @@ Recall that the feature that a relation requires is that for every one input the
 Given the graph of a function, if there exists a horizontal line that overlaps the curve of the graph more than once, then the function is not one-to-one.  If no such horizontal line exists, then the function is one-to-one.
 \end{defn}
 Explain why the horizontal line test works.
-\\[2in]
+\clearpage
 Use the horizontal line test to determine which of the following functions are one-to-one.
 \begin{tasks}(2)
 \task \graph{0.2*(x + 2)*(x - 1)*(x - 3)}{-4}{6}{-6}{6}{1}{}{}
@@ -230,6 +233,160 @@ Use the horizontal line test to determine which of the following functions are o
 \task \graph{-0.1*x^3 + 2}{-6}{6}{-4}{6}{1}{}{}
 \task \graph{5*sin(.8*deg(x))}{-6}{6}{-6}{6}{1}{}{}
 \end{tasks}
+\prb{
+In your own words, explain the following terms (based on how they are used in this module).
+\begin{tasks}(2)
+\task domain
+\task relation
+\end{tasks}
+You may want to include definitions for these items as well as for range and function on your Resource Sheet.
+}
+\prb{
+What is the rule that you use to determine whether a relation (mapped or in a table) represents a function?
+}
+\prb{
+In your own words, explain what the vertical line test is used for and how it works.
+}
+\prb{
+Determine whether the following relations are functions. Justify your answer.
+\begin{tasks}(2)
+\task $\mathrm{A}=\{(1,2),(1,7),(1,8),(1,9),(1,10)\}$
+\task $y=-x+3$
+\end{tasks}
+}
+\prb{
+    The physical education teacher calls out the first name of 6 students in a class (Aiden, Brady, Chad, Chad, Devon, Everett) and numbers them 1 through 6.
+If this information were written as ordered pairs (number, name), would this represent a function or a non-function? Explain.
+}
+\prb{State the domain and range of the following relation.
+\[
+A=\{(1,2)(3,4)(5,6)(7,8)\}
+\]
+}
+\sol{The domain is all possible $x$-values.
+\[
+\begin{aligned}
+& D=\{1,3,5,7\} \\
+& R=\{2,4,6,8\}
+\end{aligned}
+\]
+}
+\prb{
+The provincial sales tax in Manitoba is $7 \%$ of the list price. Write a relation to illustrate the relationship between the list price and the cost of the item to the consumer. State the domain and range of this relation.
+}
+\sol{
+Some ordered pairs for this relation are $(\$ 10.00, \$ 10.70),(\$ 20.00, \$ 21.40)$, ( $\$ 0.70, \$ 0.75$ ). The possible list price and cost pairs are endless. To simplify, you could specify the relationship using a formula with variables to represent the relationship. The cost is the list price plus 7\% of the list price.
+\[
+C=L+0.07 L
+\]
+or
+\[
+C=1.07 L
+\]
+Where $C$ is the cost to the consumer (price after $\operatorname{tax})$ and $L$ is the list price.
+The domain of this relation is the set of all possible list prices, and the range is the resulting cost to the consumer when tax is added to the list price. These values will be a subset of positive real numbers.
+\\[1em]
+From the above example it is obvious that the domain (the list price of an item) affects the range (the total cost). You can think of it in terms of input and output. The $x$-value that is put into the relation determines the $y$-value that comes out. Organized as a table of values, it may look like this:
+\[
+\begin{array}{|c|c|}
+\hline \text { Input } & \text { Output } \\
+\hline L & C \\
+\hline \$ 10.00 & \$ 10.70 \\
+\hline \$ 20.00 & \$ 21.40 \\
+\hline \$ 0.70 & \$ 0.75 \\
+\hline
+\end{array}
+\]
+}
+
+\prb{\begin{aligned}
+&\text { Given the following ordered pairs, state the domain and range of the relation. }\\
+&\{(1,4)(2,6)(3,8)(4,10)\}
+\end{aligned}}
+\sol{Domain: $\{ 1,2,3,4 \}$, range: $\{ 4,6,8,10 \}.}
+
+\prb{
+Determine if the following ordered pairs represent functions or relations.
+\begin{tasks}(2)
+    \task $\{(0,1),(1,2),(2,3),(3,4),(4,5)\}$
+\\[1in]
+\task $\{(2,-3),(2,5),(2,0),(2,1),(2,-2)\}$
+\\[1in]
+\task $\{(-4,-1),(3,-1),(0,-1),(-1,-1),(5,-1)\}$
+\\[1in]
+\task $\{(5,3),(4,3),(-3,3),(0,5),(-3,-1)\}$
+\\[1in]
+\task $\{(-2,4),(-1,1),(0,0),(1,1),(2,4)\}$
+\\[1in]
+\end{tasks}
+}
+\sol{
+    \begin{tasks}(2)
+\task This is a function and a relation because each $x$-value has only one possible $y$-value.
+\task This is only a relation because the input of 2 has a variety of possible outputs.
+\task This is a function and a relation because each element in the domain has only one possible value for its range.
+\task This relation is a non-function. The input of -3 has two possible outputs: 3 and -1 .
+\task This represents a relation and a function. The value of 1 is the output in two ordered pairs $(-1,1)$ and $(1,1)$, but each input has only one possible output so it still fits the definition of a function.
+\end{tasks}
+}
+
+\prb{Decide whether the relations shown are one-to-one. Justify.\\[4pt]
+    \begin{tasks}(2)
+        \task
+\mappingdiagram{1,2,3}{a,b,c}{1/1,2/2,3/3}
+\task
+\mappingdiagram{1,2,3,4}{p,q,r}{1/1,2/1,3/2,4/3}
+\end{tasks}
+}
+\sol{
+    \begin{tasks}(2)
+\task Each output is hit by exactly one input, and no output repeats. \textbf{Yes}, it is one-to-one.
+\task
+Outputs repeat (\(p\) is the image of both 1 and 2), so different inputs share an output. \textbf{Not} one-to-one.}
+\prb{The diagram below is not one-to-one. What is the \emph{fewest} number of domain elements you must remove to make it one-to-one? Give one possible choice.\\[4pt]
+\centering
+\mappingdiagram{A,B,C,D}{1,2,3}{1/1,2/2,3/2,4/3}
+}
+\sol{Output \(2\) has two preimages (B and C). Remove \emph{one} of \(\{B,C\}\). After removing one, each output has at most one preimage, so it becomes one-to-one.}
+
+\prb{Let \(f(x)=2x+3\). Is \(f\) one-to-one on \(\mathbb{R}\)? Show work.}
+\sol{\(f(x_1)=f(x_2)\Rightarrow 2x_1+3=2x_2+3\Rightarrow x_1=x_2\). Therefore \(f\) is \textbf{one-to-one} (its graph also passes the horizontal line test).}
+
+\prb{Consider \(g(x)=x^2-4\) on the domain \(\mathbb{R}\). Is \(g\) one-to-one? If not, give a domain restriction that makes it one-to-one and state the.}
+\sol{\(g\) is \textbf{not} one-to-one since \(g(2)=g(-2)=0\). Restrict to \(x\ge 0\) (or \(x\le 0\)) to make it one-to-one.}
+
+\prb{Is \(h(x)=|x-2|\) one-to-one on \(\mathbb{R}\)? If not, give a largest interval on which it is one-to-one.}
+\sol{Not one-to-one (\(h(1)=h(3)=1\)). On \([2,\infty)\) it is one-to-one.}
+
+\prb{The function \(p(x)=\dfrac{3x-5}{2}\). Explain why \(p\) is one-to-one}
+\sol{Linear with nonzero slope \(\tfrac{3}{2}\Rightarrow\) strictly increasing \(\Rightarrow\) one-to-one.}
+
+\prb{For which values of \(a\) is \(f(x)=ax+b\) one-to-one on \(\mathbb{R}\)? Justify.}
+\sol{If \(a=0\), \(f(x)=b\) is constant (not one-to-one). If \(a\ne0\), it’s strictly monotonic, so \textbf{one-to-one}. Thus: \(a\ne0\).}
+
+\prb{Determine whether the piecewise function
+\[
+f(x)=\begin{cases}
+x+1,& x<0,\\
+1-x,& x\ge0
+\end{cases}
+\]
+is one-to-one on \(\mathbb{R}\).}
+\sol{No. For example, \(f(-1)=0\) and \(f(1)=0\), so two different inputs give the same output. \(\Rightarrow\) not one-to-one.}
+
+\prb{A table of values is given:
+\[
+\begin{array}{c|ccccc}
+x&-2&-1&0&1&2\\\hline
+f(x)&3&5&3&7&9
+\end{array}
+\]
+Is \(f\) one-to-one? If not, remove the \emph{fewest} entries to make it one-to-one and rewrite the table.}
+\sol{Not one-to-one since \(f(-2)=f(0)=3\). Remove either \((-2,3)\) or \((0,3)\). One possible one-to-one table:
+\(\{(-1,5),(0,3),(1,7),(2,9)\}\).}
+
+
+
 \chapter{2. Inverse Functions}
 A common theme in mathematics is learning how to do something backwards.  When you first learned how to add, it wasn't long before you learned how to undo adding: you learned how to subtract.  After you learned how to multiply, you learned how to divide.  When you solve an equation, you repeatedly undo the operations done to your variable.  When you learn about the derivative in calculus, you will also learn about the antiderivative, which undoes the derivative operation.
 \\[1em]
