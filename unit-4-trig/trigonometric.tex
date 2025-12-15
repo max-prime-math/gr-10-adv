@@ -29,10 +29,12 @@
 \usepackage{amsmath,amssymb,amsfonts,graphicx,tasks,tikz,pgfplots}
 \usetikzlibrary{arrows,angles,quotes}
 \pgfplotsset{compat=1.17}
+\usepackage{tkz-euclide}
 
 \usepackage[a4paper,margin=0.5in,footskip=.5cm]{geometry}
 
-\input{../../../../latex/max-math-defs}
+\input{../math-defs}
+\graphicspath{{figures/}}
 
 \newcommand{\stdangle}[1]{
 	\begin{tikzpicture}
@@ -93,13 +95,137 @@ Grade 10 Advanced Math \hfill Name: \hspace{2in}
 \setcounter{page}{1}
 
 \chapter*{Introduction}
-The past three chapters were about functions that grow and grow and grow.  Some of the functions we saw grew at a constant rate, some functions grew in a way that their slope increased at a constant rate, and some functions grew in a way that their slope changed at the same rate that the function itself was growing.  Which one was which?
+The past three chapters were about functions that grow and grow and grow.  Some of the functions we saw grew at a constant rate, some functions grew in a way that their slope increased at a constant rate, and some functions grew at a linear rate.  Do you remember which ones were which?
 \\[1em]
 Trigonometric functions are completely different than that.  Trigonometric functions \emph{oscilate}.
+What does that mean?
 \\[1em]
 In the final chapter of our course, we will discuss the three primary trigonometric functions, how they are defined, how we can use them to solve problems about triangles, and how they relate to circles.\\
 We will end the chapter and this course learning about other geometric figures and how to caluclate their surface area and volume.
 \\
+\chapter{SOH CAH TOA}
+In some ways, trigonometry is a generalization of the Pythagorean Theorem.  We all remember how to find the missing side of a right-angle triangle.  But what if we only knew \emph{one} of the side lengths?  Draw a picture of a right-triangle that has a hypotenuse with a length of 4cm.
+\\[2in]
+You may realize that this is not enough information to find the other side lengths.  In other words, your triangle may look very different than a friend's, even if both right triangles have the same hypotenuse.
+\\[1em]
+But what if we knew one of the \emph{angles}?  Now draw a right-triangle with one leg of length 2cm, and the angle between that leg and the hypotenuse $30^\circ$.  How long, then, is the hypotenuse?
+\\[2in]
+Now if you compare your triangle to a friend's, they should probably look identical.  This should be a hint: we can solve for this. This is where trigonometry comes in.
+\\[1em]
+In this class we will learn about the three primary trigonometric ratios: sine, cosine, and tangent.
+These three terms refer to different ratios, in relation to one of the angles.
+When we choose an angle on the right-triangle, we have to name the three sides.  The hypotenuse already has a name, so we keep it.  The other two are named ``opposite'' and ``adjacent,'' depending on their position relative to the angle in question.
+\clearpage
+Here is a right-triangle with the side lengths labelled with respect to the angle $\theta$.  Once we have the names labelled correctly, we can start to name the ratios between them.
+\[
+\begin{tikzpicture}[scale=2,baseline]
+  \coordinate [label] (C) at (-1.5cm,-1.cm);
+  \coordinate [label] (A) at (1.5cm,-1.0cm);
+  \coordinate [label] (B) at (1.5cm,1.0cm);
+  \draw (C) -- node[above] {hyp} (B) -- node[right] {opp} (A) -- node[below] {adj} (C);
+  \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+  \tkzMarkAngle[size=.8cm,mark](A,C,B)
+\tkzLabelAngle[pos = .5](A,C,B){$\theta$}
+\end{tikzpicture}
+\hfill 
+\begin{tabular}{ccc}
+    sine & cosine & tangent \\[1em]
+    $\sin \theta$ & $\cos\theta$ & $\tan\theta$\\[1em]
+    opp/hyp & adj/hyp & opp/adj \\[1em]
+    OH & AH & OA
+\end{tabular}
+\hfill
+\]
+Why do you think the title of this chapter is called SOH CAH TOA?
+Try finding the sine, cosine, and tangent ratios of the following trigangles.
+\begin{enumerate}
+    \item 
+\[
+\begin{tikzpicture}[scale=2,baseline]
+  \coordinate [label] (C) at (-1.5cm,-1.cm);
+  \coordinate [label] (A) at (1.5cm,-1.0cm);
+  \coordinate [label] (B) at (1.5cm,1.0cm);
+  \draw (C) -- node[above] {5} (B) -- node[right] {3} (A) -- node[below] {4} (C);
+  \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+  \tkzMarkAngle[size=.8cm,mark](A,C,B)
+\tkzLabelAngle[pos = .5](A,C,B){$\theta$}
+\end{tikzpicture}
+\hfill 
+\begin{tabular}{l}
+    $\sin\theta=$ \\[1em]
+    $\cos\theta=$ \\[1em] 
+    $\tan\theta=$ \\[1em]
+\end{tabular}
+\hfill
+\hfill
+\]
+    \item 
+\[
+\begin{tikzpicture}[scale=2,baseline]
+  \coordinate [label] (C) at (-2cm,0cm);
+  \coordinate [label] (A) at (0cm,0cm);
+  \coordinate [label] (B) at (0cm,2cm);
+  \draw (C) -- node[above] {} (B) -- node[right] {2} (A) -- node[below] {2} (C);
+  \draw (0cm,0cm) rectangle (-0.25cm,0.25cm);
+  \tkzMarkAngle[size=.8cm,mark](A,C,B)
+\tkzLabelAngle[pos = .5](A,C,B){$\theta$}
+\end{tikzpicture}
+\hfill 
+\begin{tabular}{l}
+    $\sin\theta=$ \\[1em]
+    $\cos\theta=$ \\[1em] 
+    $\tan\theta=$ \\[1em]
+\end{tabular}
+\hfill
+\hfill
+\]
+    \item 
+\[
+\begin{tikzpicture}[scale=2,baseline]
+  \coordinate [label] (C) at (-1.8cm,-1.cm);
+  \coordinate [label] (A) at (1.5cm,-1.0cm);
+  \coordinate [label] (B) at (1.5cm,0.6cm);
+  \draw (C) -- node[above] {6} (B) -- node[right] {2} (A) -- node[below] {} (C);
+  \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+  \tkzMarkAngle[size=.8cm,mark](A,C,B)
+\tkzLabelAngle[pos = .5](A,C,B){$\theta$}
+\end{tikzpicture}
+\hfill 
+\begin{tabular}{l}
+    $\sin\theta=$ \\[1em]
+    $\cos\theta=$ \\[1em] 
+    $\tan\theta=$ \\[1em]
+\end{tabular}
+\hfill
+\hfill
+\]
+\end{enumerate}
+\clearpage
+The primary trigonometric ratios happen to be a function of the angle.  That means a calculator can tell you what the ratio is supposed to be, based on the angle.  Use your calculator to find the value of the missing angles.
+\begin{enumerate}
+    \item 
+\[
+\begin{tikzpicture}[scale=2,baseline=5em]
+  \coordinate [label] (C) at (-2cm,0cm);
+  \coordinate [label] (A) at (0cm,0cm);
+  \coordinate [label] (B) at (0cm,3cm);
+  \draw (C) -- node[above] {$r$} (B) -- node[right] {5} (A) -- node[below] {$x$} (C);
+  \draw (0cm,0cm) rectangle (-0.25cm,0.25cm);
+  \tkzMarkAngle[size=.8cm,mark](A,C,B)
+\tkzLabelAngle[pos = .5](A,C,B){$65^\circ$}
+\end{tikzpicture}
+\hfill 
+\begin{tabular}{r}
+    $\sin\theta=$ \\[1em]
+    $\cos\theta=$ \\[1em] 
+    $\tan\theta=$ \\[1em]
+    $x=$ \\[1em]
+    $r=$
+\end{tabular}
+\hfill
+\hfill
+\]
+\end{enumerate}
 \chapter{Angles}
 An angle in standard position:
 \\[5em]
