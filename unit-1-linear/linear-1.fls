@@ -235,6 +235,12 @@ INPUT ../math-defs.tex
 INPUT ../math-defs.tex
 INPUT ../math-defs.tex
 INPUT ../math-defs.tex
+INPUT /usr/share/texmf-dist/tex/latex/qrcode/qrcode.sty
+INPUT /usr/share/texmf-dist/tex/latex/qrcode/qrcode.sty
+INPUT /usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 INPUT /usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/share/texmf-dist/tex/latex/thmtools/thmtools.sty
@@ -393,14 +399,6 @@ INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./geogebra-android-qr.png
-INPUT ./geogebra-android-qr.png
-INPUT ./geogebra-android-qr.png
-INPUT ./geogebra-android-qr.png
-INPUT ./geogebra-ios-qr.png
-INPUT ./geogebra-ios-qr.png
-INPUT ./geogebra-ios-qr.png
-INPUT ./geogebra-ios-qr.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm

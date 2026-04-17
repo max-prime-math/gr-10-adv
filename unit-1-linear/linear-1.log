@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.14)  17 APR 2026 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.14)  17 APR 2026 15:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -456,28 +456,65 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen310
 \Gm@layoutvoffset=\dimen311
 \Gm@dimlist=\toks40
-) (../math-defs.tex (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+) (../math-defs.tex (/usr/share/texmf-dist/tex/latex/qrcode/qrcode.sty
+Package: qrcode 2015/01/08 v1.51 QR code generation
+ (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks41
+\XKV@tempa@toks=\toks42
+\XKV@tempb@toks=\toks43
+)
+\XKV@depth=\count341
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@qr@i=\count342
+\c@qr@j=\count343
+\qr@a=\count344
+\qr@b=\count345
+\qr@c=\count346
+\qr@for@depth=\count347
+\qr@for@maxdepth=\count348
+\qr@for@start=\count349
+\qr@for@end=\count350
+\qr@for@step=\count351
+\qr@newforcount=\count352
+\qr@newforcount=\count353
+\qr@desiredheight=\skip61
+\qr@modulesize=\skip62
+\qr@minipagewidth=\skip63
+\c@maski=\count354
+\c@maskj=\count355
+\c@totalones=\count356
+\c@penaltyi=\count357
+\c@penaltyii=\count358
+\c@penaltyiii=\count359
+\c@penaltyiv=\count360
+\c@qr@hexchars=\count361
+\qr@newforcount=\count362
+\c@qr@divisionsremaining=\count363
+)
+(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks41
-\thm@bodyfont=\toks42
-\thm@headfont=\toks43
-\thm@notefont=\toks44
-\thm@headpunct=\toks45
-\thm@preskip=\skip61
-\thm@postskip=\skip62
-\thm@headsep=\skip63
-\dth@everypar=\toks46
+\thm@style=\toks44
+\thm@bodyfont=\toks45
+\thm@headfont=\toks46
+\thm@notefont=\toks47
+\thm@headpunct=\toks48
+\thm@preskip=\skip64
+\thm@postskip=\skip65
+\thm@headsep=\skip66
+\dth@everypar=\toks49
 ) (/usr/share/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2023/05/04 v0.76
-\thmt@toks=\toks47
-\c@thmt@dummyctr=\count341
+\thmt@toks=\toks50
+\c@thmt@dummyctr=\count364
  (/usr/share/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2023/05/04 v0.76
  (/usr/share/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2023/05/04 v0.76
-\@parsespec=\toks48
-))
-(/usr/share/texmf-dist/tex/latex/thmtools/thm-kv.sty
+\@parsespec=\toks51
+)) (/usr/share/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2023/05/04 v0.76
 Package thm-kv Info: Theorem names will be uppercased on input line 42.
  (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -494,7 +531,7 @@ Package: thm-listof 2023/05/04 v0.76
 Package: thm-restate 2023/05/04 v0.76
 ) (/usr/share/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2023/05/04 v0.76
-\thmt@style@headstyle=\toks49
+\thmt@style@headstyle=\toks52
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
@@ -514,16 +551,16 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen316
 \ar@mcellbox=\box72
 \extrarowheight=\dimen317
-\NC@list=\toks50
-\extratabsurround=\skip64
-\backup@length=\skip65
+\NC@list=\toks53
+\extratabsurround=\skip67
+\backup@length=\skip68
 \ar@cellbox=\box73
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
  (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks51
-\verbatim@line=\toks52
+\every@verbatim=\toks54
+\verbatim@line=\toks55
 \verbatim@in@stream=\read3
 ) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -531,15 +568,15 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count342
+\etb@tempcnta=\count365
 )
 \tcb@titlebox=\box74
 \tcb@upperbox=\box75
 \tcb@lowerbox=\box76
 \tcb@phantombox=\box77
-\c@tcbbreakpart=\count343
-\c@tcblayer=\count344
-\c@tcolorbox@number=\count345
+\c@tcbbreakpart=\count366
+\c@tcblayer=\count367
+\c@tcolorbox@number=\count368
 \l__tcobox_tmpa_box=\box78
 \l__tcobox_tmpa_dim=\dimen318
 \tcb@temp=\box79
@@ -549,61 +586,61 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.9.0'
 )
-\c@tcb@cnt@defn=\count346
-\c@tcb@cnt@thm=\count347
+\c@tcb@cnt@defn=\count369
+\c@tcb@cnt@thm=\count370
 ) (/usr/share/texmf-dist/tex/latex/exercise/exercise.sty
 Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
  (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\ExerciseSkipBefore=\skip66
-\ExerciseSkipAfter=\skip67
-\AnswerSkipBefore=\skip68
-\AnswerSkipAfter=\skip69
-\Exesep=\skip70
-\Exetopsep=\skip71
-\Exeparsep=\skip72
-\Exepartopsep=\skip73
-\Exeleftmargin=\skip74
-\Exerightmargin=\skip75
-\Exelabelwidth=\skip76
-\Exelabelsep=\skip77
-\ExerciseBefore=\skip78
-\QuestionBefore=\skip79
-\subQuestionBefore=\skip80
-\subsubQuestionBefore=\skip81
-\QuestionIndent=\skip82
-\subQuestionIndent=\skip83
-\subsubQuestionIndent=\skip84
-\c@Exercise=\count348
-\c@Answer=\count349
-\c@ExePart=\count350
-\c@Question=\count351
-\c@subQuestion=\count352
-\c@subsubQuestion=\count353
-\c@savedQuestion=\count354
-\c@savedsubQuestion=\count355
-\c@savedsubsubQuestion=\count356
-\@QuestionLevel=\count357
+\ExerciseSkipBefore=\skip69
+\ExerciseSkipAfter=\skip70
+\AnswerSkipBefore=\skip71
+\AnswerSkipAfter=\skip72
+\Exesep=\skip73
+\Exetopsep=\skip74
+\Exeparsep=\skip75
+\Exepartopsep=\skip76
+\Exeleftmargin=\skip77
+\Exerightmargin=\skip78
+\Exelabelwidth=\skip79
+\Exelabelsep=\skip80
+\ExerciseBefore=\skip81
+\QuestionBefore=\skip82
+\subQuestionBefore=\skip83
+\subsubQuestionBefore=\skip84
+\QuestionIndent=\skip85
+\subQuestionIndent=\skip86
+\subsubQuestionIndent=\skip87
+\c@Exercise=\count371
+\c@Answer=\count372
+\c@ExePart=\count373
+\c@Question=\count374
+\c@subQuestion=\count375
+\c@subsubQuestion=\count376
+\c@savedQuestion=\count377
+\c@savedsubQuestion=\count378
+\c@savedsubsubQuestion=\count379
+\@QuestionLevel=\count380
 \@Exercisebox=\box83
 \all@Exercisebox=\box84
 \temp@Exercisebox=\box85
 \all@Answerbox=\box86
 \temp@Answerbox=\box87
-\ExerciseDifficulty=\count358
-\QuestionDifficulty=\count359
-\subQuestionDifficulty=\count360
-\subsubQuestionDifficulty=\count361
-\ExePartDifficulty=\count362
+\ExerciseDifficulty=\count381
+\QuestionDifficulty=\count382
+\subQuestionDifficulty=\count383
+\subsubQuestionDifficulty=\count384
+\ExePartDifficulty=\count385
 \@Answerbox=\box88
-\colonnesLevel=\count363
-\tempskipa=\skip85
-\tempskipb=\skip86
-\@savedmathindent=\skip87
+\colonnesLevel=\count386
+\tempskipa=\skip88
+\tempskipb=\skip89
+\@savedmathindent=\skip90
 ) (/usr/share/texmf-dist/tex/latex/totcount/totcount.sty
 Package: totcount 2011/01/25 v1.2 package for gettingthe total value of LaTeX counters
 )
-\c@Exercise@totc=\count364
+\c@Exercise@totc=\count387
  (/usr/share/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
@@ -615,17 +652,17 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
-\g__xassoccnt_tmpa_int=\count365
-\l__xassoccnt_tmpa_int=\count366
-\l__xassoccnt_initialcountervalue_int=\count367
-\g__xassoccnt_lastcountervalue_int=\count368
-\g__xassoccnt_backupcalls_int=\count369
-\l__xassoccnt_backuptmpa_int=\count370
-\l_xassoccnt_resetlist_counter=\count371
+\g__xassoccnt_tmpa_int=\count388
+\l__xassoccnt_tmpa_int=\count389
+\l__xassoccnt_initialcountervalue_int=\count390
+\g__xassoccnt_lastcountervalue_int=\count391
+\g__xassoccnt_backupcalls_int=\count392
+\l__xassoccnt_backuptmpa_int=\count393
+\l_xassoccnt_resetlist_counter=\count394
 )
 Package xassoccnt Info: 2021/11/21-v2.0--steppingcounterssimultaneouslyandotherfeatures on input line 34.
-\c@totalex=\count372
-\c@xassoccnt@total@totalex=\count373
+\c@totalex=\count395
+\c@xassoccnt@total@totalex=\count396
  (/usr/share/texmf-dist/tex/latex/titleref/titleref.sty
 Package: titleref 2001/04/05 v3.1  Cross-references with titles.
 ) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -660,13 +697,13 @@ Package nameref Warning: The definition of \label has changed!
 (nameref)                Check your packages! 
 (nameref)                Replacing it with the kernel definition on input line 161.
 
-\c@section@level=\count374
+\c@section@level=\count397
 ) (/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen319
-\Hy@linkcounter=\count375
-\Hy@pagecounter=\count376
+\Hy@linkcounter=\count398
+\Hy@pagecounter=\count399
  (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -674,7 +711,7 @@ Now handling font encoding PD1 ...
 ) (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count377
+\Hy@SavedSpaceFactor=\count400
  (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -687,7 +724,7 @@ Package hyperref Info: Plain pages OFF on input line 4216.
 Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count378
+\c@Hy@tempcnt=\count401
  (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -699,7 +736,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count379
+\Fld@menulength=\count402
 \Field@Width=\dimen321
 \Fld@charsize=\dimen322
 Package hyperref Info: Hyper figures OFF on input line 6084.
@@ -709,15 +746,15 @@ Package hyperref Info: backreferencing OFF on input line 6099.
 Package hyperref Info: Link coloring OFF on input line 6104.
 Package hyperref Info: Link coloring with OCG OFF on input line 6109.
 Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count380
-\c@Item=\count381
-\c@Hfootnote=\count382
+\Hy@abspage=\count403
+\c@Item=\count404
+\c@Hfootnote=\count405
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count383
-\c@bookmark@seq@number=\count384
+\Fld@listcount=\count406
+\c@bookmark@seq@number=\count407
  (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
  (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -725,8 +762,10 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip88
-) (./linear-1.aux)
+\Hy@SectionHShift=\skip91
+) (./linear-1.aux <Reading QR code for "https://play.google.com/store/apps/details?id=org.geogebra.android.g3d" at level 5-M from aux file.>
+<Reading QR code for "https://apps.apple.com/us/app/geogebra-3d-calculator/id1445871976" at level 5-M from aux file.>
+)
 \openout1 = `linear-1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -752,17 +791,17 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count385
+\scratchcounter=\count408
 \scratchdimen=\dimen323
 \scratchbox=\box89
-\nofMPsegments=\count386
-\nofMParguments=\count387
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count388
+\nofMPsegments=\count409
+\nofMParguments=\count410
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count411
 \MPscratchDim=\dimen324
-\MPnumerator=\count389
-\makeMPintoPDFobject=\count390
-\everyMPtoPDFconversion=\toks54
+\MPnumerator=\count412
+\makeMPintoPDFobject=\count413
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1012,17 +1051,15 @@ Package tasks Warning: The width of `label-width' is too small on line 495.
 
 ]
 Chapter 3.
-<geogebra-android-qr.png, id=154, 200.75pt x 200.75pt>
-File: geogebra-android-qr.png Graphic file (type png)
-<use geogebra-android-qr.png>
-Package pdftex.def Info: geogebra-android-qr.png  used on input line 532.
-(pdftex.def)             Requested size: 144.54pt x 144.54906pt.
-<geogebra-ios-qr.png, id=156, 200.75pt x 200.75pt>
-File: geogebra-ios-qr.png Graphic file (type png)
-<use geogebra-ios-qr.png>
-Package pdftex.def Info: geogebra-ios-qr.png  used on input line 537.
-(pdftex.def)             Requested size: 144.54pt x 144.54906pt.
-[15 <./geogebra-android-qr.png> <./geogebra-ios-qr.png>] [16
+
+
+<QR code requested for "https://play.google.com/store/apps/details?id=org.geogebra.android.g3d" in version 0-M.>
+<Copying the QR code for "https://play.google.com/store/apps/details?id=org.geogebra.android.g3d" in version 5-M as previously calculated.>
+
+
+<QR code requested for "https://apps.apple.com/us/app/geogebra-3d-calculator/id1445871976" in version 0-M.>
+<Copying the QR code for "https://apps.apple.com/us/app/geogebra-3d-calculator/id1445871976" in version 5-M as previously calculated.>
+[15] [16
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{Exercise.1}) has been already used, duplicate ignored
@@ -1228,7 +1265,9 @@ Chapter 6.
 
 ] [42
 
-] (./linear-1.aux)
+] (./linear-1.aux <Reading QR code for "https://play.google.com/store/apps/details?id=org.geogebra.android.g3d" at level 5-M from aux file.>
+<Reading QR code for "https://apps.apple.com/us/app/geogebra-3d-calculator/id1445871976" at level 5-M from aux file.>
+)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1237,18 +1276,18 @@ Package rerunfilecheck Info: File `linear-1.out' has not changed.
 (rerunfilecheck)             Checksum: B38DDE711829B2EDE055EDD78191A247;1092.
  ) 
 Here is how much of TeX's memory you used:
- 39822 strings out of 469515
- 935265 string characters out of 5470807
- 1959268 words of memory out of 5000000
- 67696 multiletter control sequences out of 15000+600000
+ 41475 strings out of 469515
+ 958376 string characters out of 5470807
+ 2024954 words of memory out of 5000000
+ 69335 multiletter control sequences out of 15000+600000
  637475 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,17n,104p,727b,2444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,104p,1591b,2464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on linear-1.pdf (43 pages, 223075 bytes).
+Output written on linear-1.pdf (43 pages, 225803 bytes).
 PDF statistics:
- 460 PDF objects out of 1000 (max. 8388607)
- 385 compressed objects within 4 object streams
+ 457 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
  189 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
