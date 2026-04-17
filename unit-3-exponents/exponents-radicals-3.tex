@@ -988,26 +988,65 @@ Try it: $4^{\frac{3}{2}}$
 \vfill
 \clearpage
 \begin{table}[h]
+    \renewcommand{\arraystretch}{1.8}
+    \setlength{\extrarowheight}{6pt}
+    \setlength{\tabcolsep}{10pt}
     \begin{center}
         \captionsetup{labelformat=empty}
         \caption{Summary of Exponent Rules}
         \begin{tabular}{|l|l|l|}
             \hline
-            \multicolumn{3}{|l|}{For any integers $m$ and $n$ :}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\
+            \multicolumn{3}{|l|}{For any integers $m$ and $n$:} \\
             \hline
-            Exponent of 1      & $a^{1}=a$                                                                                                                                                                                                                                                                                              & $3^{1}=3$                                                                                                                                                                                                                                                                                              \\
+            Exponent of 1
+                & $a^{1}=a$
+                & $3^{1}=3$ \\
             \hline
-            Exponent of 0      & $a^{0}=1, \quad a \neq 0$                                                                                                                                                                                                                                                                              & $(-5)^{0}=1$                                                                                                                                                                                                                                                                                           \\
+            Exponent of 0
+                & $a^{0}=1, \quad a \neq 0$
+                & $(-5)^{0}=1$ \\
             \hline
-            Product Rule       & $a^{m} \times a^{n}=a^{m+n}, \quad a \neq 0$                                                                                                                                                                                                                                                           & $2^{3} \times 2^{4}=2^{3+4}=2^{7}$                                                                                                                                                                                                                                                                     \\
+            Product Rule
+                & $a^{m} \times a^{n}=a^{m+n}, \quad a \neq 0$
+                & $2^{3} \times 2^{4}=2^{3+4}=2^{7}$ \\
             \hline
-            Quotient Rule      & $\frac{a^{m}}{a^{n}}=a^{m-n}, \quad a \neq 0$                                                                                                                                                                                                                                                          & $\frac{3^{5}}{3^{3}}=3^{5-3}=3^{2}$                                                                                                                                                                                                                                                                    \\
+            Quotient Rule
+                & $\dfrac{a^{m}}{a^{n}}=a^{m-n}, \quad a \neq 0$
+                & $\dfrac{3^{5}}{3^{3}}=3^{5-3}=3^{2}$ \\
             \hline
-            Power Rules        & \( \begin{aligned} & \left(a^{m}\right)^{n}=a^{m \times n} \\ & (a b)^{n}=a^{n} \times b^{n} \\ & \left(\frac{a}{b}\right)^{n}=\frac{a^{n}}{b^{n}} \end{aligned} \)                                                                                  & \( \begin{aligned} & \left(2^{3}\right)^{4}=2^{3 \times 4}=2^{12} \\ & (2 x)^{3}=2^{3} \times x^{3} \\ & \left(\frac{2}{3}\right)^{4}=\frac{2^{4}}{3^{4}} \end{aligned} \)                                                                           \\
+            Power Rules
+                & \( \begin{aligned}
+                    &\left(a^{m}\right)^{n}=a^{m \times n} \\
+                    &(ab)^{n}=a^{n} \times b^{n} \\
+                    &\left(\frac{a}{b}\right)^{n}=\frac{a^{n}}{b^{n}}
+                  \end{aligned} \)
+                & \( \begin{aligned}
+                    &\left(2^{3}\right)^{4}=2^{3 \times 4}=2^{12} \\
+                    &(2x)^{3}=2^{3} \times x^{3} \\
+                    &\left(\frac{2}{3}\right)^{4}=\frac{2^{4}}{3^{4}}
+                  \end{aligned} \) \\
             \hline
-            Negative Exponents & \( \begin{aligned} & a^{-n}=\frac{1}{a^{n}} \\ & \left(\frac{a}{b}\right)^{-n}=\left(\frac{b}{a}\right)^{n} \\ & \frac{a^{-m}}{b^{-n}}=\frac{b^{n}}{a^{m}} \end{aligned} \) & \( \begin{aligned} & 2^{-3}=\frac{1}{2^{3}} \\ & \left(\frac{3}{4}\right)^{-2}=\left(\frac{4}{3}\right)^{2} \\ & \frac{2^{-3}}{3^{-4}}=\frac{3^{4}}{2^{3}} \end{aligned} \) \\
+            Negative Exponents
+                & \( \begin{aligned}
+                    &a^{-n}=\frac{1}{a^{n}} \\
+                    &\left(\frac{a}{b}\right)^{-n}=\left(\frac{b}{a}\right)^{n} \\
+                    &\frac{a^{-m}}{b^{-n}}=\frac{b^{n}}{a^{m}}
+                  \end{aligned} \)
+                & \( \begin{aligned}
+                    &2^{-3}=\frac{1}{2^{3}} \\
+                    &\left(\frac{3}{4}\right)^{-2}=\left(\frac{4}{3}\right)^{2} \\
+                    &\frac{2^{-3}}{3^{-4}}=\frac{3^{4}}{2^{3}}
+                  \end{aligned} \) \\
             \hline
-            Rational Exponents & \( \begin{aligned} & \sqrt[n]{a}=a^{\frac{1}{n}} \\ & \sqrt[n]{a^{m}}=a^{\frac{m}{n}} \end{aligned} \)                                                                                                                                                                        & \( \begin{aligned} & \sqrt[3]{5}=5^{\frac{1}{3}} \\ & \sqrt[4]{5^{3}}=5^{\frac{3}{4}} \end{aligned} \)                                                                                                                                                                                     \\
+            Rational Exponents
+                & \( \begin{aligned}
+                    &\sqrt[n]{a}=a^{\frac{1}{n}} \\
+                    &\sqrt[n]{a^{m}}=a^{\frac{m}{n}}
+                  \end{aligned} \)
+                & \( \begin{aligned}
+                    &\sqrt[3]{5}=5^{\frac{1}{3}} \\
+                    &\sqrt[4]{5^{3}}=5^{\frac{3}{4}}
+                  \end{aligned} \) \\
             \hline
         \end{tabular}
     \end{center}
@@ -1097,25 +1136,25 @@ Try it: $4^{\frac{3}{2}}$
     Simplify. Express without brackets or negative exponents.\\
     \begin{tasks}(2)
         \task $\displaystyle \frac{\left(2 a^{2} b^{3}\right)^{-2} \times\left(4 a b^{-1}\right)^{3}}{\left(a^{3} b\right)^{-4}}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\frac{\left(x^{5} y^{2}\right)^{-2} \times\left(x^{2} y^{-2}\right)^{3}}{x^{-1} y^{-2}}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\frac{\left(5 m^{-1} n^{2}\right)^{2} \times\left(2 m^{-2} n^{-3}\right)^{3}}{\left(2 m^{3} n^{2}\right)^{-1}}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\frac{\left(3 a^{-2} b^{3}\right)^{2} \times\left(3 a^{-1} b^{-4}\right)^{-1}}{\left(3 a^{2} b^{-2}\right)^{-3}}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\frac{\left(3^{-1} x^{-2} y\right)^{-1} \times\left(5 x^{2} y^{4}\right)^{-2}}{\left(4 x^{-2} y^{-3}\right)^{2}}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\frac{\left(3^{-1} a^{-1} b^{-2}\right)^{-2} \times\left(4 a^{-3} b^{4}\right)^{-2}}{\left(3 a^{-3} b^{-4}\right)^{2}}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\left(\frac{4^{-2} x^{2} y^{-3}}{x^{-2} y}\right)^{3}\left(\frac{8^{-1} x^{-3} y}{x^{3} y^{-1}}\right)^{-2}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\left(\frac{9 a b^{-1}}{8 a^{-2} b^{2}}\right)^{-2}\left(\frac{3 a^{-2} b^{2}}{2 a^{2} b^{-1}}\right)^{3}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\frac{\left(2 x^{-1} y^{2}\right)\left(4 x^{2} y^{-3}\right)^{-2}}{\left(12 x^{2} y^{2}\right)}$\\
-        \\[2in]
+        \\[1.5in]
         \task $\displaystyle\left[\frac{\left(5 x^{-3} y^{4}\right)^{-2}\left(6 x^{2} y^{-5}\right)}{15 x^{2} y^{-4}}\right]^{-2}$
-        \\[2in]
+        \\[1.5in]
     \end{tasks}
 }
 \sol{
